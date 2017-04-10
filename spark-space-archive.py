@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 # coding=utf-8
 # ----------------------------------------------------------------------------
 # Create single HTML file with the messages of a Spark space
