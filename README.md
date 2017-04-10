@@ -1,5 +1,5 @@
 # Spark-Space-Archive
-Archive Spark Space to one single HTML file
+Archive messages from a Cisco Spark Space to one single HTML file
 
 # REQUIREMENTS
 * A [Cisco Spark](https://www.ciscospark.com/) account
