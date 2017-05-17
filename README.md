@@ -1,6 +1,8 @@
 # Spark-Space-Archive
 Archive messages from a Cisco Spark Space to one single HTML file
 
+![Example](/README.md_screenshot.jpg)
+
 # REQUIREMENTS
 * A [Cisco Spark](https://www.ciscospark.com/) account
 * Python 3.x
