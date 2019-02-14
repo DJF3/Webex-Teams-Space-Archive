@@ -1,13 +1,13 @@
-# Spark-Space-Archive
-Archive messages from a Cisco Spark Space to one single HTML file
+# Webex-Teams-Space-Archive
+Archive messages from a Cisco Webex Teams Space to one single HTML file
 
 ![Example](/README.md_screenshot.jpg)
 
 # REQUIREMENTS
-* A [Cisco Spark](https://www.ciscospark.com/) account
+* A [Webex Teams](https://www.webex.com/team-collaboration.html) account
 * Python 3.x
 * Python '[requests](http://docs.python-requests.org/en/master/user/install/#install)' library
-* Be a member of the Spark Space you want to archive
+* Be a member of the Webex Teams Space you want to archive
 # Features
 ### DOES: 
 * Archive all messages
@@ -27,11 +27,13 @@ Edit the following variables in the python file:
 
 > myToken = "YOUR_TOKEN_HERE"
 
-Personal Token: you can find this on [developer.ciscospark.com](https://developer.ciscospark.com), login and then click your name on top right.
+Personal Token: you can find this on [developer.webex.com](https://developer.webex.com/docs/api/getting-started), login (top right of the page) and then scroll down to "Your Personal Access Token".
+
+NOTE: This token is valid for 12 hours! After that you have to get a new Personal Access Token.
 
 > myRoom = "YOUR_ROOM_ID_HERE"
 
-Room ID: you can find this on [Spark Developer List rooms](https://developer.ciscospark.com/endpoint-rooms-get.html), make sure you're logged in, set the 'max' parameter to '900' and click Run.
+Room ID: you can find this on [Webex Teams Developer List rooms](https://developer.webex.com/endpoint-rooms-get.html), make sure you're logged in, set the 'max' parameter to '900' and click Run.
 If you don't see the RUN button, make sure 'test mode' is turned on (top of page, under "Documentation")
 > outputFileName = "./message-archive.html"
 
@@ -40,7 +42,7 @@ Enter the file name of the output HTML file.
 
 (optional) changes color of email addresses outside your organisation. (your email domain).
 If empty: it will use your account domain as the 'local' domain and change the color of any other domain.
-(this is just like how the Cisco Spark client does it)
+(this is just like how the Cisco Webex Teams client does it)
 
 
 # Roadmap
@@ -54,7 +56,7 @@ If empty: it will use your account domain as the 'local' domain and change the c
 * MESSAGES: support markup text
 * MESSAGES: support retrieving >1000 messages
 * THIS TOOL: make it web-based
-   * Login using Spark
+   * Login using Webex Teams
    * Select room to archive
    * Room messages are exported to an HTML file
    * User receives 1:1 message from tool bot with the HTML file attached
